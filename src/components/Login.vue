@@ -70,6 +70,8 @@ export default {
           this.$message.success(data.meta.msg)
           window.sessionStorage.setItem('token', data.data.token)
           this.$router.push('/home')
+        }).catch(error => {
+          this.$message.error(error + '')
         })
       })
     },
