@@ -87,7 +87,6 @@ export default {
         const data = res.data
         if (data.meta.status !== 200) return this.$message.error(data.meta.msg)
         this.menulist = data.data
-        console.log(data.data)
       })
     },
     // 点击按钮切换菜单折叠
